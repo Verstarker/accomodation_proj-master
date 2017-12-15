@@ -1,0 +1,106 @@
+{
+    "accomodations": [{
+            "name": "Quality Hotel",
+            "location": "Auckland",
+            "type": "Hotel",
+            "noOfGuests": [1, 2],
+            "price": 157,
+            "rangeOfNights": [1, 2, 3, 4, 5],
+            "phone": "5555555",
+            "images": ["images/hotel/hotel1.jpeg", "images/hotel/hotel2.jpeg", "images/hotel/hotel3.jpeg", "images/hotel/hotel4.jpeg"],
+            "services": [
+                {
+                    "name": "Breakfast",
+                    "icon": "mdi mdi-silverware",
+                    "price": 15
+                },
+                {
+                    "name": "Wifi", 
+                    "icon": "mdi mdi-wifi",
+                    "price": 10
+                },
+                {
+                    "name": "Parking",
+                    "icon": "mdi mdi-car",
+                    "price": 10
+                },
+                {
+                    "name": "Gym",
+                    "icon": "mdi mdi-dumbbell",
+                    "price": 20
+                }
+            ]
+        },
+        {
+            "name": "A Pretty Good Hostel",
+            "location": "Auckland",
+            "type": "Hostel",
+            "noOfGuests": [1, 2, 3, 4, 5, 6],
+            "price": 30,
+            "rangeOfNights": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "phone": "5556666",
+            "images": ["images/hostel/hostel1.jpg", "images/hostel/hostel2.jpg", "images/hostel/hostel3.jpg", "images/hostel/hostel4.jpg"],
+            "services": [
+                {
+                    "name": "Wifi",
+                    "icon": "mdi mdi-wifi",
+                    "price": 10
+                },
+                {
+                    "name": "Parking",
+                    "icon": "mdi mdi-car",
+                    "price": 0
+                }
+            ]
+        },
+        {
+            "name": "Affordable Motels",
+            "location": "Wellington",
+            "type": "Motel",
+            "noOfGuests": [2, 3, 4],
+            "price": 90,
+            "rangeOfNights": [3, 4, 5, 6, 7, 8, 9, 10],
+            "phone": "6666666",
+            "images": ["images/motel/motel1.jpg", "images/motel/motel2.jpg", "images/motel/motel3.jpg", "images/motel/motel4.jpg"],
+            "services": [
+                {
+                    "name" : "Wifi",
+                    "icon": "mdi mdi-wifi",
+                    "price": 10
+                },
+                {
+                    "name" : "Parking",
+                    "icon": "mdi mdi-car",
+                    "price": 0
+                }
+            ]
+        },
+        {
+            "name": "Picket Fence House",
+            "location": "Wellington",
+            "type": "House",
+            "noOfGuests": [1, 2, 3, 4],
+            "price": 240,
+            "rangeOfNights": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "phone": "6667777",
+            "images": ["images/house/house1.jpg", "images/house/house2.jpg", "images/house/house3.jpg", "images/house/house4.jpg"],
+            "services": [
+                {
+                    "name": "Breakfast",
+                    "icon": "mdi mdi-silverware",
+                    "price": 10
+                },
+                {
+                    "name": "Wifi",
+                    "icon": "mdi mdi-wifi",
+                    "price": 0
+                },
+                {
+                    "name": "Parking",
+                    "icon": "mdi mdi-car",
+                    "price": 0
+                }
+            ]
+        }
+    ]
+}

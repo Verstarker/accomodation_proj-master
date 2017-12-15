@@ -1,0 +1,150 @@
+.bg-img { position: absolute; width: 100%; height: 100%; display: block;
+                background: url(../images/background-img.jpg) center bottom no-repeat;
+                background-size: cover; }
+.img-gradient { position: absolute; width: 100%; height: 100%; 
+                    background: #00F260;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    opacity: .5; }
+
+.main-search { position: relative; display: block; top: 43%; left: 50%; transform: translate(-50%, -50%); 
+                max-width: 780px; width: 100%; } 
+
+.search-bar { position: relative; margin-bottom: 30px; font-size: 16px; }
+.search-bar input { width: 94%; padding: 15px 20px; border-radius: 20px; border: none; font-weight: 700; font-size: 18px; }
+.search-bar button { position: absolute; right: 0px; top: 0; padding: 15px 30px; font-weight: 700; font-size: 18px; 
+                        transform: none; background-color: #363636; color: #fff; border-radius: 20px; border: none; }
+.search-bar button:hover { background: #00F260;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+.search-options button { margin-right: 10px; padding: 10px; background-color: #fff; border: none; border-radius: 10px;
+                             max-width: 250px; width: 100%; font-size: 0; text-align: left; }
+.search-options button:last-child { margin-right: 0; }
+.search-options button span, .search-options input { font-size: 14px; }
+.search-options input { border: none; color: #000; }
+.search-options input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+.search-options input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+.search-options input:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+.search-options input:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+.search-options button span.span-title { display: block; }
+.search-options button span.mdi { display: block; font-size: 30px; text-align: center; }
+
+.search-holder { position: relative; display: none; padding-top: 50px; }
+
+.filters, .accomo-list--item { background-color: #ebebeb; }
+.filters { padding: 20px; }
+.filter-type { padding: 30px 0; border-bottom: 1px solid #111; }
+.filter-type:first-child { padding-top: 0; }
+.filter-type input { margin-bottom: 10px; }
+
+.search-results { margin-left: 30px; }
+.accomo-list--item { margin-bottom: 30px; padding: 10px; }
+.accomo-list--item .column .accomo-item--detail { padding: 0 10px; } 
+.accomo-list--item .column:last-child { text-align: right; }
+.accomo-item--detail a { color: #2d4490; }
+.accomo-item--detail h4 { margin-bottom: 5px; }
+.accomo-item--detail span { display: block; margin-bottom: 20px; }
+.accomo-item--detail button, .filter-submit, .book-now { padding: 20px; background: #AB44F4; color: #fff; font-size: 18px; font-weight: 600; text-transform: uppercase; }
+.filter-submit { width: 100%; margin-top: 20px; padding: 10px; }
+
+.accomo-details--box span{ display: block; text-align: left; }
+.accomo-details--box .column:last-child { text-align: right; }
+.details-checkin-button, .details-checkout-button { color: #111; padding: 5px 20px; border-radius: 10px; font-size: 14px; }
+.details-checkin-button { background-color: #7df8ae; margin-right: 20px; }
+.details-checkout-button { background-color: #82baf2; }
+
+.image-carousel { margin-bottom: 30px; }
+
+.services { text-align: center; padding-left: 20px; }
+
+.services-container span { display: inline-block; color: #2d4490; font-size: 26px; }
+.services-container h4 { display: inline-block; }
+.service { margin-bottom: 10px; text-align: left; border: 1px solid #111; cursor: pointer; }
+.service .tick { display: none; }
+.selected .tick { display: inline-block; }
+.service h4 { margin-bottom: 5px; }
+.selected h4, .selected span { color: #10CC5D; }
+.book-now { width: 100% }
+
+
+/*
+ *
+ *  PLUG-INS
+ *
+ */
+
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-container img { width: 100%; }
+
+.swiper-button-prev, .swiper-button-next { padding: 10px 20px; background-color: rgba(255,255,255,0.8); border-radius: 50%; }
+
+.swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+.gallery-top {
+      max-height: 500px;
+      width: 100%;
+    }
+    .gallery-thumbs {
+      height: 95px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+      opacity: 1;
+    }
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ebebeb; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+    color: #111;
+}
+
+.sidenav .closebtn:hover { transition: 0.5s; color: #aaa; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}

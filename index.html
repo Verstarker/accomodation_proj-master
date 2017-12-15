@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tourism New Zealand Accomodation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="vendors/Swiper-4.0.7/dist/css/swiper.min.css" rel="stylesheet" >
+    <link href="vendors/lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+    <link href="vendors/datepicker-0.6.4/dist/datepicker.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/setup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div class="accomo-details--box"></div>
+        <!-- / accomo details box -->
+    </div>
+    <!-- my sidebar -->
+
+    <div id="main">
+        <div class="container">
+            <div class="bg-img">
+                <div class="img-gradient"></div>
+                <div class="main-search">
+                    <h1>TravelMate</h1>
+                    <div class="search-bar">
+                        <input type="text" class="search-box" name="search" placeholder="Where Do You Want To Go?" value="">
+                        <button type="submit" class="search-button">Search</button>
+                    </div>
+                    <!-- / search bar -->
+                    <div class="search-options">
+                        <button type="check-button">
+                                <div class="row">
+                                    <div class="column column-9">
+                                        <span class="span-title">Check-in</span>
+                                        <input type="text" class="checkin-date" placeholder="Please Enter Date" data-toggle="datepicker"></span>
+                                    </div><!-- / column -->
+                                    <div class="column column-3">
+                                        <span class="mdi mdi-calendar"></span>
+                                    </div><!-- / column -->
+                                </div><!-- / row -->
+                            </button>
+                        <button type="check-button">
+                                <div class="row">
+                                    <div class="div column column-9">
+                                        <span class="span-title">Check-out</span>
+                                        <input type="text" class="checkout-date" placeholder="Please Enter Date" data-toggle="datepicker"></span>
+                                    </div><!-- / column -->
+                                    <div class="column column-3">
+                                        <span class="mdi mdi-calendar"></span>
+                                    </div><!-- / column -->
+                                </div><!-- / row -->
+                            </button>
+                        <button type="button">
+                                <div class="row">
+                                    <div class="column column-9">
+                                        <span class="span-title">No of Guests</span>
+                                        <input type="text" class="no-of-guests"></span>
+                                    </div><!-- / column -->
+                                    <div class="column column-3">
+                                        <span class="mdi mdi-account-multiple"></span>
+                                    </div><!-- / column -->
+                                </div><!-- row -->
+                            </button>
+                    </div>
+                    <!-- / search options -->
+                </div>
+                <!-- / main search -->
+            </div>
+            <!-- / bg-img -->
+
+
+            <div id="search-holder" class="search-holder">
+                <div class="holder">
+                    <div class="row">
+                        <div class="column column-3">
+                            <div class="filters">
+                                <div class="filter-type">
+                                    <h4>Types of Accomodation</h4>
+                                    <input type="checkbox" name="accomo-type" value="Hotel"> Hotel<br>
+                                    <input type="checkbox" name="accomo-type" value="Motel"> Motel<br>
+                                    <input type="checkbox" name="accomo-type" value="Hostel"> Hostel<br>
+                                    <input type="checkbox" name="accomo-type" value="House"> House<br>
+                                </div>
+                                <!-- / filter type -->
+                                <div class="filter-type">
+                                    <h4>Price</h4>
+                                    <input type="radio" name="accomo-price" value="Less than $100"> Less than $100<br>
+                                    <input type="radio" name="accomo-price" value="$100 to $200"> $100 to $200<br>
+                                    <input type="radio" name="accomo-price" value="$200 to $300"> $200 to $300<br>
+                                    <input type="radio" name="accomo-price" value="$300 to $400"> $300 to $400<br>
+                                    <input type="radio" name="accomo-price" value="$400 or More"> $400 or More<br>
+                                </div>
+                                <!-- / filter type -->
+                                <div class="filter-type">
+                                    <h4>Meals</h4>
+                                    <input type="radio" name="accomo-price" value="mealYes"> Yes<br>
+                                    <input type="radio" name="accomo-price" value="mealNo"> No<br>
+                                </div>
+                                <!-- / filter type -->
+                                <button class="filter-submit">Apply Filters</button>
+                            </div>
+                            <!-- / filters -->
+                        </div>
+                        <!-- / column -->
+                        <div class="column column-9">
+                            <div class="search-results">
+
+                            </div>
+                            <!-- / search results -->
+                        </div>
+                        <!-- / column -->
+                    </div>
+                    <!-- / row -->
+                </div>
+                <!-- / holder -->
+            </div>
+            <!-- / search holders -->
+
+            <div class="main-footer">
+
+            </div>
+            <!-- / footer -->
+
+
+        </div>
+        <!-- / container -->
+    </div>
+    <!-- / main -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="vendors/Swiper-4.0.7/dist/js/swiper.min.js"></script>
+    <script src="vendors/datepicker-0.6.4/dist/datepicker.min.js"></script>
+    <script src="vendors/js/moment.js"></script>
+    <script src=js/main.js></script>
+    <script>
+        var galleryTop = new Swiper('.gallery-top', {
+            // Optional parameters
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+        });
+        //galleryTop[0].params.control = galleryThumbs;
+        //galleryThumbs[1].params.control = galleryTop;
+    </script>
+    <script>
+        $('[data-toggle="datepicker"]').datepicker();
+        $().datepicker({
+            language: 'en-nz',
+            format: 'dd-m-yyyy',
+            startDate: new Date(),
+        });
+        var check = $('[data-toggle="datepicker"]').datepicker('getDate');
+    </script>
+</body>
+
+</html>
